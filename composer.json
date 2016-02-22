@@ -1,5 +1,5 @@
 {
-    "name": "hiqdev/hidev-php",
+    "name": "hiqdev/hidev-yii2-web-app",
     "type": "yii2-extension",
     "description": "HiDev config for Yii2 web applications",
     "keywords": [
