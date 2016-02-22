@@ -1,0 +1,17 @@
+install:
+    before:
+        - yii2-web-app-dirs
+
+yii2-web-app-dirs:
+    path:   .
+    class:  directory
+    web:
+        assets:
+            chmod: '0777'
+    runtime:
+        chmod:  '0777'
+
+vcsignore:
+    'runtime/*':    Yii2 web app directories
+    'web/assets/*': Yii2 web app directories
+
