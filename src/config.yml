@@ -12,6 +12,8 @@ yii2-web-app-dirs:
             template: '@hidev/yii2/webapp/views/web/index.twig'
     runtime:
         chmod:  '0777'
+        nginx.conf:
+            template: '@hidev/yii2/webapp/views/nginx.twig'
     src:
         config:
             main.php:
