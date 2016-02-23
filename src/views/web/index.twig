@@ -4,6 +4,7 @@ defined('YII_DEBUG') or define('YII_DEBUG', {{ config.yii2webapp.env == 'prod' ?
 defined('YII_ENV') or define('YII_ENV', '{{ config.yii2webapp.env | default('dev') }}');
 
 require(__DIR__ . '/../vendor/autoload.php');
+Yii::setAlias('@vendor', __DIR__ . '/../vendor');
 
 $params = yii\helpers\ArrayHelper::merge(
 {% for k,v in config.yii2webapp.parents %}
