@@ -1,20 +1,20 @@
 <?php
 
-defined('YII_DEBUG') or define('YII_DEBUG', {{ this.goal.env == 'prod' ? 'false' : 'true');
-defined('YII_ENV') or define('YII_ENV', '{{ this.goal.env }}');
+defined('YII_DEBUG') or define('YII_DEBUG', {{ config.yii2webapp.env == 'prod' ? 'false' : 'true' }});
+defined('YII_ENV') or define('YII_ENV', '{{ config.yii2webapp.env | default('dev') }}');
 
 require(__DIR__ . '/../vendor/autoload.php');
 
 $params = yii\helpers\ArrayHelper::merge(
-{% for k,v in this.goal.parents %}
-    require(__DIR__ . '/../vendor/{{k}}/config/params.php'),
+{% for k,v in config.yii2webapp.parents %}
+    require(__DIR__ . '/../vendor/{{ k }}/src/config/params.php'),
 {% endfor %}
     require(__DIR__ . '/../src/config/params.php')
 );
 
 $config = yii\helpers\ArrayHelper::merge(
-{% for k,v in this.goal.parents %}
-    require(__DIR__ . '/../vendor/{{k}}/config/main.php'),
+{% for k,v in config.yii2webapp.parents %}
+    require(__DIR__ . '/../vendor/{{ k }}/src/config/main.php'),
 {% endfor %}
     require(__DIR__ . '/../src/config/main.php'),
     ['params' => $params]

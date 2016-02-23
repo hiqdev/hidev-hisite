@@ -12,6 +12,9 @@
 return [
     'components' => [
         'config' => [
+            'yii2webapp' => [
+                'class' => 'hidev\yii2\webapp\controllers\Yii2webappController',
+            ],
             'include' => [
                 '@hidev/yii2/webapp/config.yml',
             ],

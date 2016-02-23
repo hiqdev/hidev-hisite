@@ -8,8 +8,18 @@ yii2-web-app-dirs:
     web:
         assets:
             chmod: '0777'
+        index.php:
+            template: '@hidev/yii2/webapp/views/web/index.twig'
     runtime:
         chmod:  '0777'
+    src:
+        config:
+            main.php:
+                once:     true
+                template: '@hidev/yii2/webapp/views/config/main.twig'
+            params.php:
+                once:     true
+                template: '@hidev/yii2/webapp/views/config/params.twig'
 
 vcsignore:
     'runtime/*':    Yii2 web app directories
