@@ -4,21 +4,10 @@ defined('YII_DEBUG') or define('YII_DEBUG', {{ config.yii2webapp.env == 'prod' ?
 defined('YII_ENV') or define('YII_ENV', '{{ config.yii2webapp.env | default('dev') }}');
 
 require(__DIR__ . '/../vendor/autoload.php');
-Yii::setAlias('@vendor', __DIR__ . '/../vendor');
-
-$params = yii\helpers\ArrayHelper::merge(
-{% for k,v in config.yii2webapp.parents %}
-    require(__DIR__ . '/../vendor/{{ k }}/src/config/params.php'),
-{% endfor %}
-    require(__DIR__ . '/../src/config/params.php')
-);
 
 $config = yii\helpers\ArrayHelper::merge(
-{% for k,v in config.yii2webapp.parents %}
-    require(__DIR__ . '/../vendor/{{ k }}/src/config/main.php'),
-{% endfor %}
-    require(__DIR__ . '/../src/config/main.php'),
-    ['params' => $params]
+    require(__DIR__ . '/../vendor/yiisoft/yii2-extraconfig.php'),
+    require(__DIR__ . '/../src/config/main.php')
 );
 
 $application = new yii\web\Application($config);
