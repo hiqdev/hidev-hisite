@@ -1,7 +1,7 @@
 hiqdev/hidev-yii2-web-app changelog
 -----------------------------------
 
-## Under development
+## 0.0.1 2016-03-22
 
 - Added basics
 
