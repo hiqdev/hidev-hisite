@@ -6,8 +6,8 @@ HiDev Yii2 Web App
 [![Latest Stable Version](https://poser.pugx.org/hiqdev/hidev-yii2-web-app/v/stable)](https://packagist.org/packages/hiqdev/hidev-yii2-web-app)
 [![Total Downloads](https://poser.pugx.org/hiqdev/hidev-yii2-web-app/downloads)](https://packagist.org/packages/hiqdev/hidev-yii2-web-app)
 [![Build Status](https://img.shields.io/travis/hiqdev/hidev-yii2-web-app.svg)](https://travis-ci.org/hiqdev/hidev-yii2-web-app)
-[![Code Coverage](https://scrutinizer-ci.com/g/hiqdev/hidev-yii2-web-app/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/hiqdev/hidev-yii2-web-app/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hiqdev/hidev-yii2-web-app/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hiqdev/hidev-yii2-web-app/?branch=master)
+[![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/hidev-yii2-web-app.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-yii2-web-app/)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hidev-yii2-web-app.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-yii2-web-app/)
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 
@@ -19,9 +19,10 @@ Provides:
     - runtime/
     - web/assets/
     - web/index.php
-    - src/config/main.php
-    - src/config/params.php
+    - src/config/main.php (if not exists)
+    - src/config/params.php (if not exists)
 - setting permissions for directories and files
+- generation of nginx config
 
 ## Installation
 

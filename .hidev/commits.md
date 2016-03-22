@@ -3,6 +3,7 @@ hiqdev/hidev-yii2-web-app commits history
 
 ## Under development
 
+    - 4aad7ea 2016-03-21 radically simplified config building (sol@hiqdev.com)
 - Added basics
     - 4af5901 2016-02-23 + nginx config generation (sol@hiqdev.com)
     - 3630906 2016-02-23 + getters for domain, prjdir, webdir, logdir, ip variables (sol@hiqdev.com)

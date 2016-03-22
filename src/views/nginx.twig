@@ -1,34 +1,34 @@
 {% if config.yii2webapp.ssl %}
 
 server {
-  listen        {{ config.yii2webapp.ip }}:80 default;
-  server_name   {{ config.yii2webapp.domain }};
-  error_log     {{ config.yii2webapp.logdir }}/$host-error.log info;
-  access_log    off;
-  rewrite       (.*) https://$host$1;
+    listen        {{ config.yii2webapp.ip }}:80;
+    server_name   {{ config.yii2webapp.domain }};
+    error_log     {{ config.yii2webapp.logdir }}/$host-error.log info;
+    access_log    off;
+    rewrite       (.*) https://$host$1;
 }
 
 server {
-  listen        {{ config.yii2webapp.ip }}:443 default rcvbuf=32768 sndbuf=131072;
-  server_name   {{ config.yii2webapp.domain }};
+    listen        {{ config.yii2webapp.ip }}:443;
+    server_name   {{ config.yii2webapp.domain }};
 
-  ssl                   on;
-  ssl_session_cache     shared:SSL:10m;
-  ssl_session_timeout   10m;
-  ssl_certificate       {{ config.yii2webapp.ssl_path }}.crt;
-  ssl_certificate_key   {{ config.yii2webapp.ssl_path }}.key;
-  ssl_protocols         SSLv3 TLSv1 TLSv1.1 TLSv1.2;
-  ssl_ciphers           "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
-  ssl_prefer_server_ciphers on;
+    ssl                   on;
+    ssl_session_cache     shared:SSL:10m;
+    ssl_session_timeout   10m;
+    ssl_certificate       {{ config.yii2webapp.sslPath }}.crt;
+    ssl_certificate_key   {{ config.yii2webapp.sslPath }}.key;
+    ssl_protocols         SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers           "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+    ssl_prefer_server_ciphers on;
 
-  location / {
-    proxy_pass http://127.0.0.1:80;
-    proxy_redirect off;
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_set_header X-Forwarded-Proto https;
-  }
+    location / {
+        proxy_pass http://127.0.0.1:80;
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+    }
 }
 {% endif %}
 
@@ -55,7 +55,7 @@ server {
 
     location ~ \.php$ {
         include          fastcgi_params;
-        fastcgi_pass     unix:/run/php/php7.0-fpm.sock;
+        fastcgi_pass     {{ config.yii2webapp.fpmSocket }};
         fastcgi_param    SCRIPT_FILENAME $document_root/$fastcgi_script_name;
         fastcgi_param    REMOTE_ADDR $http_x_real_ip;
         fastcgi_param    HTTP_REFERER $http_referer;

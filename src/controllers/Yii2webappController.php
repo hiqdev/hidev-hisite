@@ -16,6 +16,9 @@ namespace hidev\yii2\webapp\controllers;
  */
 class Yii2webappController extends \hidev\controllers\CollectionController
 {
+    private $_ip;
+    private $_fpmSocket;
+
     public function getDomain()
     {
         return $this->getItem('domain') ?: $this->takePackage()->name;
@@ -28,27 +31,51 @@ class Yii2webappController extends \hidev\controllers\CollectionController
 
     public function getWebDir()
     {
-        return $this->getitem('webdir') ?: $this->getPrjDir() . '/web';
+        return $this->getItem('webdir') ?: $this->getPrjDir() . '/web';
     }
 
     public function getLogDir()
     {
-        return $this->getitem('logdir') ?: '/var/log/php';
+        return $this->getItem('logdir') ?: '/var/log/php';
+    }
+
+    public function setIp($value)
+    {
+        $this->_ip = $value;
     }
 
     public function getIp()
     {
-        $ip = $this->getItem('ip');
-        if ($ip === null) {
-            $ip = $this->findIp();
-            $this->setItem('ip', $ip);
+        if ($this->_ip === null) {
+            $this->_ip = $this->findIp();
         }
 
-        return $ip;
+        return $this->_ip;
     }
 
     public function findIp()
     {
         return gethostbyname($this->getDomain());
+    }
+
+    public function getFpmSocket()
+    {
+        if ($this->_fpmSocket === null) {
+            $this->_fpmSocket = 'unix:' . $this->findFpmSocketFile();
+        }
+
+        return $this->_fpmSocket;
+    }
+
+    public function findFpmSocketFile()
+    {
+        $files = ['/var/run/php5-fpm.sock', '/run/php/php7.0-fpm.sock'];
+        foreach ($files as $file) {
+            if (file_exists($file)) {
+                return $file;
+            }
+        }
+
+        return reset($files);
     }
 }

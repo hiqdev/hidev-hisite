@@ -16,9 +16,10 @@ package:
             - runtime/
             - web/assets/
             - web/index.php
-            - src/config/main.php
-            - src/config/params.php
+            - src/config/main.php (if not exists)
+            - src/config/params.php (if not exists)
         - setting permissions for directories and files
+        - generation of nginx config
 
 require:
     hiqdev/hidev-php:    "*"
