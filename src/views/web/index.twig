@@ -6,7 +6,7 @@ defined('YII_ENV') or define('YII_ENV', '{{ config.yii2webapp.env | default('dev
 require(__DIR__ . '/../vendor/autoload.php');
 
 $config = yii\helpers\ArrayHelper::merge(
-    require(__DIR__ . '/../vendor/yiisoft/yii2-extraconfig.php'),
+    require(__DIR__ . '/../vendor/hiqdev/extensions-config.php'),
     require(__DIR__ . '/../src/config/main.php')
 );
 
