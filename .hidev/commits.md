@@ -3,7 +3,9 @@ hiqdev/hidev-hisite commits history
 
 ## Under development
 
-- Added initial tests
+- Added initial tests and fixed build
+    - a30fa0a 2016-04-14 phpcsfixed (sol@hiqdev.com)
+    - 83ea2ef 2016-04-14 fixed build with asset-packagist (sol@hiqdev.com)
     - 87c1074 2016-04-14 inited tests (sol@hiqdev.com)
 - Changed: redone to `hidev-hisite`
     - fb32dee 2016-04-14 redone to `hidev-hisite` (sol@hiqdev.com)

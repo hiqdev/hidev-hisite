@@ -3,7 +3,7 @@ hiqdev/hidev-hisite changelog
 
 ## Under development
 
-- Added initial tests
+- Added initial tests and fixed build
 - Changed: redone to `hidev-hisite`
 
 ## 0.0.1 2016-03-22
