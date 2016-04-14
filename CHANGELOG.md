@@ -1,5 +1,5 @@
-hiqdev/hidev-yii2-web-app changelog
------------------------------------
+hiqdev/hidev-hisite changelog
+-----------------------------
 
 ## Under development
 

@@ -1,8 +1,9 @@
-hiqdev/hidev-yii2-web-app commits history
------------------------------------------
+hiqdev/hidev-hisite commits history
+-----------------------------------
 
 ## Under development
 
+    - a749ef4 2016-04-14 added `_bootstrap.php` templating, splited config info common, web, console (sol@hiqdev.com)
 - Changed to `extension-config` <- `yii2-extraconfig`
     - 1f98d71 2016-04-02 + params to config/main (sol@hiqdev.com)
     - fed75fa 2016-04-02 changed `extensions-config` <- `yii2-extraconfig` (sol@hiqdev.com)

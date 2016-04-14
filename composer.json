@@ -1,21 +1,18 @@
 {
-    "name": "hiqdev/hidev-yii2-web-app",
+    "name": "hiqdev/hidev-hisite",
     "type": "yii2-extension",
-    "description": "HiDev config for Yii2 web applications",
+    "description": "HiDev config for HiSite",
     "keywords": [
         "hidev",
-        "config",
-        "yii2",
-        "web",
-        "application"
+        "hisite"
     ],
-    "homepage": "https://github.com/hiqdev/hidev-yii2-web-app",
+    "homepage": "https://github.com/hiqdev/hidev-hisite",
     "license": "BSD-3-Clause",
     "support": {
         "email": "support@hiqdev.com",
-        "source": "https://github.com/hiqdev/hidev-yii2-web-app",
-        "issues": "https://github.com/hiqdev/hidev-yii2-web-app/issues",
-        "wiki": "https://github.com/hiqdev/hidev-yii2-web-app/wiki",
+        "source": "https://github.com/hiqdev/hidev-hisite",
+        "issues": "https://github.com/hiqdev/hidev-hisite/issues",
+        "wiki": "https://github.com/hiqdev/hidev-hisite/wiki",
         "forum": "http://forum.hiqdev.com/"
     },
     "authors": [
@@ -45,14 +42,16 @@
         }
     ],
     "require-dev": {
-        "hiqdev/hidev": "*@dev"
+        "hiqdev/hidev": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "hidev\\yii2\\webapp\\": "src"
+            "hidev\\hisite\\": "src"
         }
     },
     "extra": {
-        "extension-config": "src/extension-config.php"
+        "extension-plugin": {
+            "hidev-config": "src/hidev-config.php"
+        }
     }
 }

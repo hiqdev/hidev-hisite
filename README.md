@@ -1,17 +1,17 @@
-HiDev Yii2 Web App
-==================
+HiDev HiSite
+============
 
-**HiDev config for Yii2 web applications**
+**HiDev config for HiSite**
 
-[![Latest Stable Version](https://poser.pugx.org/hiqdev/hidev-yii2-web-app/v/stable)](https://packagist.org/packages/hiqdev/hidev-yii2-web-app)
-[![Total Downloads](https://poser.pugx.org/hiqdev/hidev-yii2-web-app/downloads)](https://packagist.org/packages/hiqdev/hidev-yii2-web-app)
-[![Build Status](https://img.shields.io/travis/hiqdev/hidev-yii2-web-app.svg)](https://travis-ci.org/hiqdev/hidev-yii2-web-app)
-[![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/hidev-yii2-web-app.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-yii2-web-app/)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hidev-yii2-web-app.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-yii2-web-app/)
+[![Latest Stable Version](https://poser.pugx.org/hiqdev/hidev-hisite/v/stable)](https://packagist.org/packages/hiqdev/hidev-hisite)
+[![Total Downloads](https://poser.pugx.org/hiqdev/hidev-hisite/downloads)](https://packagist.org/packages/hiqdev/hidev-hisite)
+[![Build Status](https://img.shields.io/travis/hiqdev/hidev-hisite.svg)](https://travis-ci.org/hiqdev/hidev-hisite)
+[![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/hidev-hisite.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-hisite/)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hidev-hisite.svg)](https://scrutinizer-ci.com/g/hiqdev/hidev-hisite/)
 
 [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 
-This plugin provides HiDev configuration for [Yii2](http://yiiframework.com/) web applications.
+This plugin provides HiDev configuration for [HiSite](https://github.com/hiqdev/hisite) web applications.
 
 Provides:
 
@@ -19,8 +19,11 @@ Provides:
     - runtime/
     - web/assets/
     - web/index.php
-    - src/config/main.php (if not exists)
-    - src/config/params.php (if not exists)
+    - src/_bootstrap.php
+    - src/config/params.php  (if not exists)
+    - src/config/common.php  (if not exists)
+    - src/config/console.php (if not exists)
+    - src/config/web.php     (if not exists)
 - setting permissions for directories and files
 - generation of nginx config
 
@@ -31,13 +34,13 @@ The preferred way to install this yii2-extension is through [composer](http://ge
 Either run
 
 ```sh
-php composer.phar require "hiqdev/hidev-yii2-web-app"
+php composer.phar require "hiqdev/hidev-hisite"
 ```
 
 or add
 
 ```json
-"hiqdev/hidev-yii2-web-app": "*"
+"hiqdev/hidev-hisite": "*"
 ```
 
 to the require section of your composer.json.

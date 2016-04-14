@@ -1,14 +1,14 @@
 package:
     type:           yii2-extension
-    name:           hidev-yii2-web-app
-    title:          HiDev config for Yii2 web applications
-    headline:       HiDev Yii2 Web App
-    keywords:       hidev, config, yii2, web, application
-    namespace:      hidev\yii2\webapp
+    name:           hidev-hisite
+    title:          HiDev config for HiSite
+    headline:       HiDev HiSite
+    keywords:       hidev, hisite
+    namespace:      hidev\hisite
     description:    |
         [HiDev](https://github.com/hiqdev/hidev) is a task runner, code generator and build tool for easier continuos integration.
 
-        This plugin provides HiDev configuration for [Yii2](http://yiiframework.com/) web applications.
+        This plugin provides HiDev configuration for [HiSite](https://github.com/hiqdev/hisite) web applications.
 
         Provides:
 
@@ -16,8 +16,11 @@ package:
             - runtime/
             - web/assets/
             - web/index.php
-            - src/config/main.php (if not exists)
-            - src/config/params.php (if not exists)
+            - src/_bootstrap.php
+            - src/config/params.php  (if not exists)
+            - src/config/common.php  (if not exists)
+            - src/config/console.php (if not exists)
+            - src/config/web.php     (if not exists)
         - setting permissions for directories and files
         - generation of nginx config
 

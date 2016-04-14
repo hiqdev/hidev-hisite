@@ -3,8 +3,8 @@
 /*
  * HiDev config for Yii2 web applications
  *
- * @link      https://github.com/hiqdev/hidev-yii2-web-app
- * @package   hidev-yii2-web-app
+ * @link      https://github.com/hiqdev/hidev-hisite
+ * @package   hidev-hisite
  * @license   BSD-3-Clause
  * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
@@ -12,14 +12,14 @@
 return [
     'components' => [
         'config' => [
-            'yii2webapp' => [
-                'class' => 'hidev\yii2\webapp\controllers\Yii2webappController',
+            'hisite' => [
+                'class' => 'hidev\hisite\controllers\HiSiteController',
             ],
             'include' => [
-                '@hidev/yii2/webapp/config.yml',
+                '@hidev/hisite/config.yml',
             ],
             'views' => [
-                '@hidev/yii2/webapp/views',
+                '@hidev/hisite/views',
             ],
         ],
     ],
