@@ -3,7 +3,8 @@ hiqdev/hidev-hisite changelog
 
 ## Under development
 
-- Changed to `extension-config` <- `yii2-extraconfig`
+- Added initial tests
+- Changed: redone to `hidev-hisite`
 
 ## 0.0.1 2016-03-22
 

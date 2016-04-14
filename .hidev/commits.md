@@ -3,8 +3,11 @@ hiqdev/hidev-hisite commits history
 
 ## Under development
 
+- Added initial tests
+    - 87c1074 2016-04-14 inited tests (sol@hiqdev.com)
+- Changed: redone to `hidev-hisite`
+    - fb32dee 2016-04-14 redone to `hidev-hisite` (sol@hiqdev.com)
     - a749ef4 2016-04-14 added `_bootstrap.php` templating, splited config info common, web, console (sol@hiqdev.com)
-- Changed to `extension-config` <- `yii2-extraconfig`
     - 1f98d71 2016-04-02 + params to config/main (sol@hiqdev.com)
     - fed75fa 2016-04-02 changed `extensions-config` <- `yii2-extraconfig` (sol@hiqdev.com)
     - 285eb0d 2016-04-01 changed `extension-config` <- `yii2-extraconfig` (sol@hiqdev.com)
