@@ -15,13 +15,21 @@ yii2-web-app-dirs:
         nginx.conf:
             template: '@hidev/yii2/webapp/views/nginx.twig'
     src:
+        _bootstrap.php:
+            template: '@hidev/yii2/webapp/views/bootstrap.twig'
         config:
-            main.php:
-                once:     true
-                template: '@hidev/yii2/webapp/views/config/main.twig'
             params.php:
                 once:     true
                 template: '@hidev/yii2/webapp/views/config/params.twig'
+            common.php:
+                once:     true
+                template: '@hidev/yii2/webapp/views/config/common.twig'
+            console.php:
+                once:     true
+                template: '@hidev/yii2/webapp/views/config/console.twig'
+            web.php:
+                once:     true
+                template: '@hidev/yii2/webapp/views/config/web.twig'
 
 vcsignore:
     'runtime/*':    Yii2 web app directories

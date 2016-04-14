@@ -3,11 +3,11 @@
 defined('YII_DEBUG') or define('YII_DEBUG', {{ config.yii2webapp.env == 'prod' ? 'false' : 'true' }});
 defined('YII_ENV') or define('YII_ENV', '{{ config.yii2webapp.env | default('dev') }}');
 
-require(__DIR__ . '/../vendor/autoload.php');
+require(__DIR__ . '/../src/_bootstrap.php');
 
 $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/../vendor/hiqdev/extensions-config.php'),
-    require(__DIR__ . '/../src/config/main.php')
+    require(__DIR__ . '/../src/config/web.php')
 );
 
 $application = new yii\web\Application($config);
