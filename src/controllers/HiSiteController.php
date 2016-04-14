@@ -1,12 +1,12 @@
 <?php
 
 /*
- * License plugin for HiDev
+ * HiDev config for HiSite
  *
- * @link      https://github.com/hiqdev/hidev-license
- * @package   hidev-license
+ * @link      https://github.com/hiqdev/hidev-hisite
+ * @package   hidev-hisite
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
 namespace hidev\hisite\controllers;

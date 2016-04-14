@@ -1,10 +1,10 @@
 <?php
 
 $header = <<<EOF
-HiDev config for Yii2 web applications
+HiDev config for HiSite
 
-@link      https://github.com/hiqdev/hidev-yii2-web-app
-@package   hidev-yii2-web-app
+@link      https://github.com/hiqdev/hidev-hisite
+@package   hidev-hisite
 @license   BSD-3-Clause
 @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
 EOF;
