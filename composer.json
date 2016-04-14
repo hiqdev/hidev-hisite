@@ -41,6 +41,9 @@
             "homepage": "http://hiqdev.com/"
         }
     ],
+    "require": {
+        "hiqdev/composer-extension-plugin": "^0.0.6"
+    },
     "require-dev": {
         "hiqdev/hidev": "dev-master"
     },
