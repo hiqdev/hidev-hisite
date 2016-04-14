@@ -49,6 +49,11 @@
             "hidev\\hisite\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "hidev\\hisite\\tests\\": "tests"
+        }
+    },
     "extra": {
         "extension-plugin": {
             "hidev-config": "src/hidev-config.php"
