@@ -58,5 +58,11 @@
         "extension-plugin": {
             "hidev-config": "src/hidev-config.php"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.hiqdev.com"
+        }
+    ]
 }
