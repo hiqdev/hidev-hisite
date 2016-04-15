@@ -3,6 +3,11 @@ hiqdev/hidev-hisite commits history
 
 ## Under development
 
+- Changed with new `hiqdev/composer-extension-plugin`
+    - e245a4f 2016-04-15 added `hisite-config.php` (sol@hiqdev.com)
+    - fb32dee 2016-04-14 redone to `hidev-hisite` (sol@hiqdev.com)
+    - fed75fa 2016-04-02 changed `extensions-config` <- `yii2-extraconfig` (sol@hiqdev.com)
+    - 285eb0d 2016-04-01 changed `extension-config` <- `yii2-extraconfig` (sol@hiqdev.com)
 - Added initial tests and fixed build
     - 964a8d8 2016-04-14 + require `hiqdev/composer-extension-plugin` (sol@hiqdev.com)
     - a30fa0a 2016-04-14 phpcsfixed (sol@hiqdev.com)
@@ -12,10 +17,6 @@ hiqdev/hidev-hisite commits history
     - 01e8861 2016-04-14 added templates for common, console and web config files (sol@hiqdev.com)
     - a749ef4 2016-04-14 added `_bootstrap.php` templating, splited config info common, web, console (sol@hiqdev.com)
     - 1f98d71 2016-04-02 + params to config/main (sol@hiqdev.com)
-- Changed: redone to `hidev-hisite`
-    - fb32dee 2016-04-14 redone to `hidev-hisite` (sol@hiqdev.com)
-    - fed75fa 2016-04-02 changed `extensions-config` <- `yii2-extraconfig` (sol@hiqdev.com)
-    - 285eb0d 2016-04-01 changed `extension-config` <- `yii2-extraconfig` (sol@hiqdev.com)
 
 ## 0.0.1 2016-03-22
 
