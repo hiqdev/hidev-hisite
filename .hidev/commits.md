@@ -13,7 +13,8 @@ hiqdev/hidev-hisite commits history
     - a30fa0a 2016-04-14 phpcsfixed (sol@hiqdev.com)
     - 83ea2ef 2016-04-14 fixed build with asset-packagist (sol@hiqdev.com)
     - 87c1074 2016-04-14 inited tests (sol@hiqdev.com)
-- Added and fixed templates for config files
+- Added and fixed templates for config files and bootstrap
+    - 7fb1d38 2016-04-15 dont rewrite `src/_bootstrap.php` (sol@hiqdev.com)
     - 01e8861 2016-04-14 added templates for common, console and web config files (sol@hiqdev.com)
     - a749ef4 2016-04-14 added `_bootstrap.php` templating, splited config info common, web, console (sol@hiqdev.com)
     - 1f98d71 2016-04-02 + params to config/main (sol@hiqdev.com)
