@@ -16,6 +16,7 @@ hisite:
             template: '@hidev/hisite/views/nginx.twig'
     src:
         _bootstrap.php:
+            once:     true
             template: '@hidev/hisite/views/bootstrap.twig'
         config:
             params.php:
