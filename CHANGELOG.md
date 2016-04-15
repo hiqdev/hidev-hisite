@@ -3,9 +3,9 @@ hiqdev/hidev-hisite changelog
 
 ## Under development
 
+- Fixed templates for config files and bootstrap
 - Changed with new `hiqdev/composer-extension-plugin`
 - Added initial tests and fixed build
-- Added and fixed templates for config files and bootstrap
 
 ## 0.0.1 2016-03-22
 

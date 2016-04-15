@@ -3,6 +3,13 @@ hiqdev/hidev-hisite commits history
 
 ## Under development
 
+- Fixed templates for config files and bootstrap
+    - 250df95 2016-04-15 + require `vendor/hiqdev/common-config.php` at web/index (sol@hiqdev.com)
+    - 52c3403 2016-04-15 + set main alias at bootstrap (sol@hiqdev.com)
+    - 7fb1d38 2016-04-15 dont rewrite `src/_bootstrap.php` (sol@hiqdev.com)
+    - 01e8861 2016-04-14 added templates for common, console and web config files (sol@hiqdev.com)
+    - a749ef4 2016-04-14 added `_bootstrap.php` templating, splited config info common, web, console (sol@hiqdev.com)
+    - 1f98d71 2016-04-02 + params to config/main (sol@hiqdev.com)
 - Changed with new `hiqdev/composer-extension-plugin`
     - e245a4f 2016-04-15 added `hisite-config.php` (sol@hiqdev.com)
     - fb32dee 2016-04-14 redone to `hidev-hisite` (sol@hiqdev.com)
@@ -13,11 +20,6 @@ hiqdev/hidev-hisite commits history
     - a30fa0a 2016-04-14 phpcsfixed (sol@hiqdev.com)
     - 83ea2ef 2016-04-14 fixed build with asset-packagist (sol@hiqdev.com)
     - 87c1074 2016-04-14 inited tests (sol@hiqdev.com)
-- Added and fixed templates for config files and bootstrap
-    - 7fb1d38 2016-04-15 dont rewrite `src/_bootstrap.php` (sol@hiqdev.com)
-    - 01e8861 2016-04-14 added templates for common, console and web config files (sol@hiqdev.com)
-    - a749ef4 2016-04-14 added `_bootstrap.php` templating, splited config info common, web, console (sol@hiqdev.com)
-    - 1f98d71 2016-04-02 + params to config/main (sol@hiqdev.com)
 
 ## 0.0.1 2016-03-22
 
