@@ -16,5 +16,8 @@ if (!defined('HISITE_VENDOR_DIR')) {
     require_once HISITE_VENDOR_DIR . '/autoload.php';
     require_once HISITE_VENDOR_DIR . '/yiisoft/yii2/Yii.php';
 
-    Yii::setAlias('{{ config.package.namespace | replace({'\\': '/'}) }}', __DIR__);
+    Yii::setAlias('@root', dirname(__DIR__));
+    Yii::setAlias('@hisite', __DIR__);
+    Yii::setAlias('@vendor', HISITE_VENDOR_DIR);
+    Yii::setAlias('@{{ config.package.namespace | replace({'\\': '/'}) }}', __DIR__);
 }
