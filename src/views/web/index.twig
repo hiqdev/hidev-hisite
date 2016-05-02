@@ -5,10 +5,6 @@ defined('YII_ENV') or define('YII_ENV', '{{ config.hisite.env | default('dev') }
 
 require(__DIR__ . '/../src/_bootstrap.php');
 
-$config = yii\helpers\ArrayHelper::merge(
-    require(__DIR__ . '/../vendor/hiqdev/hisite-config.php'),
-    require(__DIR__ . '/../src/config/web.php')
-);
+$config = require(__DIR__ . '/../src/config/web.php');
 
-$application = new yii\web\Application($config);
-$application->run();
+(new yii\web\Application($config))->run();
