@@ -4,7 +4,6 @@ install:
 
 hisite:
     path:   .
-    class:  directory
     web:
         assets:
             chmod: '0777'
