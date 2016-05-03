@@ -22,10 +22,20 @@ vendor
 # composer lock files
 composer.lock
 
+# HiSite directories
+runtime/*
+web/assets/*
+
 # phpunit generated files
 coverage.clover
 
 # PHARs
 composer.phar
 php-cs-fixer.phar
+phpunit-skelgen.phar
 phpunit.phar
+
+# created files
+src/_bootstrap.php
+src/config/
+web/

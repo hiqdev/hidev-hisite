@@ -4,6 +4,14 @@ hiqdev/hidev-hisite commits history
 ## Under development
 
 - Fixed templates for config files and bootstrap
+    - 380f115 2016-05-03 changed to local hidev plugins (sol@hiqdev.com)
+    - 7dc6c6e 2016-05-03 fixed HiSiteController to inherit from DirectoryController (sol@hiqdev.com)
+    - f222ab7 2016-05-02 simplified `web/index.php` template (sol@hiqdev.com)
+    - f86ab4f 2016-05-02 minor fix (sol@hiqdev.com)
+    - e23d9d9 2016-05-02 + more aliases at bootstrap template: @root, @hisite, @vendor (sol@hiqdev.com)
+    - f31824b 2016-04-15 still playing with `hiqdev/composer-extension-plugin` version (sol@hiqdev.com)
+    - 8a5a80f 2016-04-15 playing with `hiqdev/composer-extension-plugin` version (sol@hiqdev.com)
+    - 5227550 2016-04-15 removed require `vendor/hiqdev/common-config.php` at web/index (sol@hiqdev.com)
     - 250df95 2016-04-15 + require `vendor/hiqdev/common-config.php` at web/index (sol@hiqdev.com)
     - 52c3403 2016-04-15 + set main alias at bootstrap (sol@hiqdev.com)
     - 7fb1d38 2016-04-15 dont rewrite `src/_bootstrap.php` (sol@hiqdev.com)
