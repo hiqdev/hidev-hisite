@@ -14,8 +14,12 @@ namespace hidev\hisite\controllers;
 /**
  * Goal for HiSite.
  */
-class HiSiteController extends \hidev\controllers\CollectionController
+class HiSiteController extends \hidev\controllers\DirectoryController
 {
+    public $env;
+    public $ssl;
+    public $sslPath;
+
     private $_ip;
     private $_fpmSocket;
 
