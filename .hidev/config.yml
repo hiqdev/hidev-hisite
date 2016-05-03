@@ -26,6 +26,3 @@ package:
         - setting permissions for directories and files
         - nginx config generation
 
-require:
-    hiqdev/hidev-php:    "*"
-    hiqdev/hidev-vendor: "*"
