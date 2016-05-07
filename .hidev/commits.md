@@ -3,6 +3,7 @@ hiqdev/hidev-hisite commits history
 
 ## Under development
 
+    - def4a32 2016-05-07 splitted out nginx functionality into `hidev-nginx` (sol@hiqdev.com)
 - Fixed templates for config files and bootstrap
     - 380f115 2016-05-03 changed to local hidev plugins (sol@hiqdev.com)
     - 7dc6c6e 2016-05-03 fixed HiSiteController to inherit from DirectoryController (sol@hiqdev.com)
