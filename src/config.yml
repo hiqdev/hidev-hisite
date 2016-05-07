@@ -11,8 +11,6 @@ hisite:
             template: '@hidev/hisite/views/web/index.twig'
     runtime:
         chmod:  '0777'
-        nginx.conf:
-            template: '@hidev/hisite/views/nginx.twig'
     src:
         _bootstrap.php:
             once:     true
@@ -30,6 +28,9 @@ hisite:
             web.php:
                 once:     true
                 template: '@hidev/hisite/views/config/web.twig'
+
+nginx:
+    default:
 
 vcsignore:
     'runtime/*':    HiSite directories
