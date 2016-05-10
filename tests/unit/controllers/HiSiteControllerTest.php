@@ -37,5 +37,4 @@ class HiSiteControllerTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertInstanceOf(HiSiteController::class, $this->object);
     }
-
 }

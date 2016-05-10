@@ -4,6 +4,8 @@ hiqdev/hidev-hisite commits history
 ## Under development
 
 - Changed: rearranged configs and templates for configs to new scheme
+    - f2ba45d 2016-05-10 fixed bootstrap path (sol@hiqdev.com)
+    - 1309448 2016-05-10 still rearranging configs (sol@hiqdev.com)
     - eb57b00 2016-05-10 rearranged configs to new scheme (sol@hiqdev.com)
     - def4a32 2016-05-07 splitted out nginx functionality into `hidev-nginx` (sol@hiqdev.com)
     - 380f115 2016-05-03 changed to local hidev plugins (sol@hiqdev.com)
