@@ -24,110 +24,18 @@ class HiSiteControllerTest extends \PHPUnit_Framework_TestCase
     protected $object;
     protected $ip = '1.1.1.1';
 
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
     protected function setUp()
     {
-        $this->object = new HiSiteController('hisite', null);
+        $this->object = new HiSiteController('test', null);
     }
 
-    /**
-     * Tears down the fixture, for example, closes a network connection.
-     * This method is called after a test is executed.
-     */
     protected function tearDown()
     {
     }
 
-    /**
-     * @covers hidev\hisite\controllers\HiSiteController::getDomain
-     * @todo   Implement testGetDomain().
-     */
-    public function testGetDomain()
+    public function testConstruct()
     {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
+        $this->assertInstanceOf(HiSiteController::class, $this->object);
     }
 
-    /**
-     * @covers hidev\hisite\controllers\HiSiteController::getPrjDir
-     * @todo   Implement testGetPrjDir().
-     */
-    public function testGetPrjDir()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers hidev\hisite\controllers\HiSiteController::getWebDir
-     * @todo   Implement testGetWebDir().
-     */
-    public function testGetWebDir()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers hidev\hisite\controllers\HiSiteController::getLogDir
-     * @todo   Implement testGetLogDir().
-     */
-    public function testGetLogDir()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    public function testGetIp()
-    {
-        $this->object->setIp($this->ip);
-        $this->assertSame($this->ip, $this->object->getIp());
-    }
-
-    /**
-     * @covers hidev\hisite\controllers\HiSiteController::findIp
-     * @todo   Implement testFindIp().
-     */
-    public function testFindIp()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers hidev\hisite\controllers\HiSiteController::getFpmSocket
-     * @todo   Implement testGetFpmSocket().
-     */
-    public function testGetFpmSocket()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
-
-    /**
-     * @covers hidev\hisite\controllers\HiSiteController::findFpmSocketFile
-     * @todo   Implement testFindFpmSocketFile().
-     */
-    public function testFindFpmSocketFile()
-    {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
-    }
 }

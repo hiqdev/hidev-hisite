@@ -36,6 +36,8 @@ phpunit-skelgen.phar
 phpunit.phar
 
 # created files
-src/_bootstrap.php
-src/config/
+src/config/bootstrap.php
+src/config/common.php
+src/config/params.php
+src/config/web.php
 web/

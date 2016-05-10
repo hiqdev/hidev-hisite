@@ -3,8 +3,9 @@ hiqdev/hidev-hisite commits history
 
 ## Under development
 
+- Changed: rearranged configs and templates for configs to new scheme
+    - eb57b00 2016-05-10 rearranged configs to new scheme (sol@hiqdev.com)
     - def4a32 2016-05-07 splitted out nginx functionality into `hidev-nginx` (sol@hiqdev.com)
-- Fixed templates for config files and bootstrap
     - 380f115 2016-05-03 changed to local hidev plugins (sol@hiqdev.com)
     - 7dc6c6e 2016-05-03 fixed HiSiteController to inherit from DirectoryController (sol@hiqdev.com)
     - f222ab7 2016-05-02 simplified `web/index.php` template (sol@hiqdev.com)

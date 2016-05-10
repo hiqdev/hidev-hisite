@@ -16,7 +16,7 @@ return [
                 'class' => 'hidev\hisite\controllers\HiSiteController',
             ],
             'include' => [
-                '@hidev/hisite/config.yml',
+                '@hidev/hisite/config/goals.yml',
             ],
             'views' => [
                 '@hidev/hisite/views',
