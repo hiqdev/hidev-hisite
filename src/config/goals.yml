@@ -12,19 +12,22 @@ hisite:
     runtime:
         chmod:  '0777'
     src:
-        _bootstrap.php:
-            once:     true
-            template: '@hidev/hisite/views/bootstrap.twig'
         config:
-            params.php:
+            bootstrap.php:
                 once:     true
-                template: '@hidev/hisite/views/config/params.twig'
+                template: '@hidev/hisite/views/config/bootstrap.twig'
             common.php:
                 once:     true
                 template: '@hidev/hisite/views/config/common.twig'
-            console.php:
+            hidev.php:
                 once:     true
-                template: '@hidev/hisite/views/config/console.twig'
+                template: '@hidev/hisite/views/config/hidev.twig'
+            hisite.php:
+                once:     true
+                template: '@hidev/hisite/views/config/hisite.twig'
+            params.php:
+                once:     true
+                template: '@hidev/hisite/views/config/params.twig'
             web.php:
                 once:     true
                 template: '@hidev/hisite/views/config/web.twig'
