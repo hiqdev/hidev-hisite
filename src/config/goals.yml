@@ -16,9 +16,6 @@ hisite:
             bootstrap.php:
                 once:     true
                 template: '@hidev/hisite/views/config/bootstrap.twig'
-            common.php:
-                once:     true
-                template: '@hidev/hisite/views/config/common.twig'
             hidev.php:
                 once:     true
                 template: '@hidev/hisite/views/config/hidev.twig'

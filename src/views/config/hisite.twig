@@ -1,13 +1,12 @@
 <?php
 
-$common = require __DIR__ . '/common.php';
+$params = require __DIR__ . '/params.php';
 
-$config = [
+return [
     'components' => [
         'request' => [
-            'cookieValidationKey' => $common['params']['cookieValidationKey'],
+            'cookieValidationKey' => $params['cookieValidationKey'],
         ],
     ],
+    'params' => $params,
 ];
-
-return yii\helpers\ArrayHelper::merge($common, $config);
