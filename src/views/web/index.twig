@@ -3,7 +3,7 @@
 defined('YII_DEBUG') or define('YII_DEBUG', {{ config.hisite.env == 'prod' ? 'false' : 'true' }});
 defined('YII_ENV') or define('YII_ENV', '{{ config.hisite.env | default('dev') }}');
 
-require(__DIR__ . '/../src/_bootstrap.php');
+require(__DIR__ . '/../src/config/bootstrap.php');
 
 $config = require(__DIR__ . '/../src/config/web.php');
 
