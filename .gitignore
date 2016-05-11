@@ -37,7 +37,6 @@ phpunit.phar
 
 # created files
 src/config/bootstrap.php
-src/config/common.php
 src/config/params.php
 src/config/web.php
 web/

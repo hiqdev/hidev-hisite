@@ -4,6 +4,7 @@ hiqdev/hidev-hisite commits history
 ## Under development
 
 - Changed: rearranged configs and templates for configs to new scheme
+    - 5579d4c 2016-05-11 added `YII_ENV/DEBUG` substitution to params (sol@hiqdev.com)
     - f2ba45d 2016-05-10 fixed bootstrap path (sol@hiqdev.com)
     - 1309448 2016-05-10 still rearranging configs (sol@hiqdev.com)
     - eb57b00 2016-05-10 rearranged configs to new scheme (sol@hiqdev.com)
