@@ -23,8 +23,7 @@ hisite:
                 once:     true
                 template: '@hidev/hisite/views/config/hisite.twig'
             params.php:
-                once:     true
-                template: '@hidev/hisite/views/config/params.twig'
+                class:    hisite-params
             web.php:
                 once:     true
                 template: '@hidev/hisite/views/config/web.twig'
