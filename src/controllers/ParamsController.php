@@ -18,7 +18,7 @@ class ParamsController extends \hidev\controllers\FileController
     public function actionLoad()
     {
         $this->setItems([
-            'text' => $this->getFile()->load() ?: '',
+            'text' => $this->getFile()->load() ?: $this->getView()->render('hisite/config/params.twig'),
         ]);
     }
 
