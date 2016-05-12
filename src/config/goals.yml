@@ -12,23 +12,23 @@ hisite:
         assets:
             chmod: '0777'
         index.php:
-            template: '@hidev/hisite/views/web/index.twig'
+            template: hisite/web/index.twig
     runtime:
         chmod:  '0777'
     src:
         config:
             bootstrap.php:
                 once:     true
-                template: '@hidev/hisite/views/config/bootstrap.twig'
+                template: hisite/config/bootstrap.twig
             hidev.php:
                 once:     true
-                template: '@hidev/hisite/views/config/hidev.twig'
+                template: hisite/config/hidev.twig
             hisite.php:
                 once:     true
-                template: '@hidev/hisite/views/config/hisite.twig'
+                template: hisite/config/hisite.twig
             params.php:
                 class:    hisite-params
             web.php:
                 once:     true
-                template: '@hidev/hisite/views/config/web.twig'
+                template: hisite/config/web.twig
 
