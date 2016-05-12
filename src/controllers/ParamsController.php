@@ -28,7 +28,7 @@ class ParamsController extends \hidev\controllers\FileController
         $env    = $this->takeGoal('hisite')->env;
         $subs   = [
             'YII_ENV'   => "'$env'",
-            'YII_DEBUG' => $env==='prod' ? 'false' : 'true',
+            'YII_DEBUG' => $env === 'prod' ? 'false' : 'true',
         ];
         foreach ($subs as $key => $value) {
             $text = preg_replace("/^defined\('$key'\) or define\('$key',.*$/m", "defined('$key') or define('$key', $value);", $text);

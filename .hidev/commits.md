@@ -3,7 +3,14 @@ hiqdev/hidev-hisite commits history
 
 ## Under development
 
+- Added better nginx goal integration
+    - c5ef149 2016-05-12 + nginx vhost manipulation to HiSiteController (sol@hiqdev.com)
+- Changed: moved templates to `hisite` subdir
+    - 9947c9f 2016-05-12 moved templates to `hisite` subdir (sol@hiqdev.com)
 - Changed: rearranged configs and templates for configs to new scheme
+    - d2553bd 2016-05-12 + env defaulting in HiSiteController (sol@hiqdev.com)
+    - b4266f7 2016-05-12 improved ParamsController to generate by template initially (sol@hiqdev.com)
+    - ce5e9a5 2016-05-12 moved vcsignore to src/config/hidev.php (sol@hiqdev.com)
     - 5579d4c 2016-05-11 added `YII_ENV/DEBUG` substitution to params (sol@hiqdev.com)
     - f2ba45d 2016-05-10 fixed bootstrap path (sol@hiqdev.com)
     - 1309448 2016-05-10 still rearranging configs (sol@hiqdev.com)

@@ -3,6 +3,8 @@ hiqdev/hidev-hisite changelog
 
 ## Under development
 
+- Added better nginx goal integration
+- Changed: moved templates to `hisite` subdir
 - Changed: rearranged configs and templates for configs to new scheme
 - Changed with new `hiqdev/composer-extension-plugin`
 - Added initial tests and fixed build

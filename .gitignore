@@ -23,8 +23,8 @@ vendor
 composer.lock
 
 # HiSite directories
-runtime/*
-web/assets/*
+/runtime/*
+/web/assets/*
 
 # phpunit generated files
 coverage.clover
@@ -36,7 +36,7 @@ phpunit-skelgen.phar
 phpunit.phar
 
 # created files
-src/config/bootstrap.php
-src/config/params.php
-src/config/web.php
-web/
+/src/config/bootstrap.php
+/src/config/params.php
+/src/config/web.php
+/web/
