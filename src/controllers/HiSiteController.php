@@ -16,10 +16,23 @@ namespace hidev\hisite\controllers;
  */
 class HiSiteController extends \hidev\controllers\DirectoryController
 {
-    public $env;
-
+    protected $_env;
     protected $_nginx;
     protected $_vhost;
+
+    public function setEnv($value)
+    {
+        $this->_env = $value;
+    }
+
+    public function getEnv()
+    {
+        if ($this->_env === null) {
+            $this->_env = 'dev';
+        }
+
+        return $this->_env;
+    }
 
     public function getNginx()
     {
