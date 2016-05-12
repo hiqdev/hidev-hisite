@@ -24,6 +24,10 @@ return [
             'views' => [
                 '@hidev/hisite/views',
             ],
+            'vcsignore' => [
+                '/runtime/*'    => 'HiSite directories',
+                '/web/assets/*' => 'HiSite directories',
+            ],
         ],
     ],
 ];

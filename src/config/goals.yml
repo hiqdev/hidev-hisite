@@ -2,6 +2,10 @@ install:
     before:
         - hisite
 
+nginx:
+    before:
+        - hisite
+
 hisite:
     path:   .
     web:
@@ -27,11 +31,4 @@ hisite:
             web.php:
                 once:     true
                 template: '@hidev/hisite/views/config/web.twig'
-
-nginx:
-    default:
-
-vcsignore:
-    'runtime/*':    HiSite directories
-    'web/assets/*': HiSite directories
 
