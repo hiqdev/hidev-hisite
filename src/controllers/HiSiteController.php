@@ -17,4 +17,32 @@ namespace hidev\hisite\controllers;
 class HiSiteController extends \hidev\controllers\DirectoryController
 {
     public $env;
+
+    protected $_nginx;
+    protected $_vhost;
+
+    public function getNginx()
+    {
+        if ($this->_nginx === null) {
+            $this->_nginx = $this->takeGoal('nginx');
+        }
+
+        return $this->_nginx;
+    }
+
+    public function getVhost()
+    {
+        if ($this->_vhost === null) {
+            $this->_vhost = $this->getNginx()->get('default');
+        }
+
+        return $this->_vhost;
+    }
+
+    public function setVhost(array $params)
+    {
+        foreach ($params as $key => $value) {
+            $this->getVhost()->{$key} = $value;
+        }
+    }
 }
