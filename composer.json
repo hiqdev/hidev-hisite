@@ -43,7 +43,7 @@
     ],
     "require": {
         "hiqdev/composer-extension-plugin": "<2.0",
-        "hiqdev/hidev-nginx": "<2.0 || dev-master"
+        "hiqdev/hidev-nginx": "<2.0"
     },
     "require-dev": {
         "hiqdev/hidev": "dev-master",
@@ -69,7 +69,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://asset-packagist.hiqdev.com"
+            "url": "https://asset-packagist.org"
         }
     ]
 }
