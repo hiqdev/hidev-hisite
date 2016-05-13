@@ -42,7 +42,8 @@
         }
     ],
     "require": {
-        "hiqdev/composer-extension-plugin": "~0.0"
+        "hiqdev/composer-extension-plugin": "<2.0",
+        "hiqdev/hidev-nginx": "<2.0"
     },
     "require-dev": {
         "hiqdev/hidev": "dev-master",
