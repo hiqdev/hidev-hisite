@@ -12,11 +12,15 @@ hisite:
         assets:
             chmod: '0777'
         index.php:
+            once:     true
             template: hisite/web/index.twig
     runtime:
         chmod:  '0777'
     src:
         config:
+            defines.php:
+                class:    hisite-defines
+                template: hisite/config/defines.twig
             bootstrap.php:
                 once:     true
                 template: hisite/config/bootstrap.twig
@@ -27,7 +31,8 @@ hisite:
                 once:     true
                 template: hisite/config/hisite.twig
             params.php:
-                class:    hisite-params
+                once:     true
+                template: hisite/config/params.twig
             web.php:
                 once:     true
                 template: hisite/config/web.twig

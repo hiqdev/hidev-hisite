@@ -11,28 +11,31 @@
 
 namespace hidev\hisite\controllers;
 
-class ParamsController extends \hidev\controllers\FileController
+/**
+ * Controller for generating `src/config/defines.php` file
+ */
+class DefinesController extends \hidev\controllers\FileController
 {
     public $fileType = 'plain';
 
     public function actionLoad()
     {
         $this->setItems([
-            'text' => $this->getFile()->load() ?: $this->getView()->render('hisite/config/params.twig'),
+            'text' => $this->getFile()->load() ?: $this->getView()->render($this->template),
         ]);
     }
 
     public function actionSave()
     {
-        $text   = $this->getItem('text');
-        $env    = $this->takeGoal('hisite')->env;
-        $subs   = [
-            'YII_ENV'   => "'$env'",
-            'YII_DEBUG' => $env === 'prod' ? 'false' : 'true',
-        ];
-        foreach ($subs as $key => $value) {
+        $text = $this->getItem('text');
+        foreach ($this->getHisite()->getDefines() as $key => $value) {
             $text = preg_replace("/^defined\('$key'\) or define\('$key',.*$/m", "defined('$key') or define('$key', $value);", $text);
         }
         $this->getFile()->save($text);
+    }
+
+    public function getHisite()
+    {
+        return $this->takeGoal('hisite');
     }
 }

@@ -17,6 +17,7 @@ namespace hidev\hisite\controllers;
 class HiSiteController extends \hidev\controllers\DirectoryController
 {
     protected $_env;
+    protected $_defines = [];
     protected $_nginx;
     protected $_vhost;
 
@@ -32,6 +33,25 @@ class HiSiteController extends \hidev\controllers\DirectoryController
         }
 
         return $this->_env;
+    }
+
+    public function setDefines(array $hash)
+    {
+        $env = $this->getEnv();
+        $defaults = [
+            'YII_ENV'   => "'$env'",
+            'YII_DEBUG' => $env === 'prod' ? 'false' : 'true',
+        ];
+        $this->_defines = array_merge($this->_defines, $defaults, $hash);
+    }
+
+    public function getDefines()
+    {
+        if (empty($this->_defines)) {
+            $this->setDefines([]);
+        }
+
+        return $this->_defines;
     }
 
     public function getNginx()

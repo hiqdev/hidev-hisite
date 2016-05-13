@@ -15,8 +15,8 @@ return [
             'hisite' => [
                 'class' => 'hidev\hisite\controllers\HiSiteController',
             ],
-            'hisite-params' => [
-                'class' => 'hidev\hisite\controllers\ParamsController',
+            'hisite-defines' => [
+                'class' => 'hidev\hisite\controllers\DefinesController',
             ],
             'include' => [
                 '@hidev/hisite/config/goals.yml',
