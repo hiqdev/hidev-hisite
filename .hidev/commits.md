@@ -3,6 +3,12 @@ hiqdev/hidev-hisite commits history
 
 ## Under development
 
+- Added functional tests
+    - 4e91329 2016-05-13 added functional tests (sol@hiqdev.com)
+    - e522f30 2016-05-13 fixed dependencies (sol@hiqdev.com)
+    - b7a2e04 2016-05-13 fixing dependencies constraints (sol@hiqdev.com)
+    - f69b54f 2016-05-13 fixing dependencies constraints (sol@hiqdev.com)
+    - 8d1bd1b 2016-05-13 fixing dependencies (sol@hiqdev.com)
 - Added better nginx goal integration
     - c5ef149 2016-05-12 + nginx vhost manipulation to HiSiteController (sol@hiqdev.com)
 - Changed: moved templates to `hisite` subdir

@@ -3,6 +3,7 @@ hiqdev/hidev-hisite changelog
 
 ## Under development
 
+- Added functional tests
 - Added better nginx goal integration
 - Changed: moved templates to `hisite` subdir
 - Changed: rearranged configs and templates for new configs scheme: bootstrap, defines, params, hidev, hisite, web
