@@ -7,7 +7,8 @@ hiqdev/hidev-hisite commits history
     - c5ef149 2016-05-12 + nginx vhost manipulation to HiSiteController (sol@hiqdev.com)
 - Changed: moved templates to `hisite` subdir
     - 9947c9f 2016-05-12 moved templates to `hisite` subdir (sol@hiqdev.com)
-- Changed: rearranged configs and templates for configs to new scheme
+- Changed: rearranged configs and templates for new configs scheme: bootstrap, defines, params, hidev, hisite, web
+    - 399d007 2016-05-13 changed defines generation, added DefinesController instead of ParamsController (sol@hiqdev.com)
     - d2553bd 2016-05-12 + env defaulting in HiSiteController (sol@hiqdev.com)
     - b4266f7 2016-05-12 improved ParamsController to generate by template initially (sol@hiqdev.com)
     - ce5e9a5 2016-05-12 moved vcsignore to src/config/hidev.php (sol@hiqdev.com)
@@ -21,6 +22,7 @@ hiqdev/hidev-hisite commits history
     - f222ab7 2016-05-02 simplified `web/index.php` template (sol@hiqdev.com)
     - f86ab4f 2016-05-02 minor fix (sol@hiqdev.com)
     - e23d9d9 2016-05-02 + more aliases at bootstrap template: @root, @hisite, @vendor (sol@hiqdev.com)
+- Changed with new `hiqdev/composer-extension-plugin`
     - f31824b 2016-04-15 still playing with `hiqdev/composer-extension-plugin` version (sol@hiqdev.com)
     - 8a5a80f 2016-04-15 playing with `hiqdev/composer-extension-plugin` version (sol@hiqdev.com)
     - 5227550 2016-04-15 removed require `vendor/hiqdev/common-config.php` at web/index (sol@hiqdev.com)
@@ -30,7 +32,6 @@ hiqdev/hidev-hisite commits history
     - 01e8861 2016-04-14 added templates for common, console and web config files (sol@hiqdev.com)
     - a749ef4 2016-04-14 added `_bootstrap.php` templating, splited config info common, web, console (sol@hiqdev.com)
     - 1f98d71 2016-04-02 + params to config/main (sol@hiqdev.com)
-- Changed with new `hiqdev/composer-extension-plugin`
     - e245a4f 2016-04-15 added `hisite-config.php` (sol@hiqdev.com)
     - fb32dee 2016-04-14 redone to `hidev-hisite` (sol@hiqdev.com)
     - fed75fa 2016-04-02 changed `extensions-config` <- `yii2-extraconfig` (sol@hiqdev.com)
