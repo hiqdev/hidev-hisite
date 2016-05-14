@@ -12,7 +12,7 @@
 namespace hidev\hisite\controllers;
 
 /**
- * Controller for generating `src/config/defines.php` file
+ * Controller for generating `src/config/defines.php` file.
  */
 class DefinesController extends \hidev\controllers\FileController
 {

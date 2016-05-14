@@ -1,7 +1,7 @@
 <?php
 
 /*
- * HiDev Nginx plugin
+ * HiDev config for HiSite
  *
  * @link      https://github.com/hiqdev/hidev-hisite
  * @package   hidev-hisite
@@ -13,7 +13,7 @@ namespace hidev\hisite\tests\functional;
 
 use hidev\tests\functional\Tester;
 
-class NginxTest extends \PHPUnit_Framework_TestCase
+class HiSiteTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var \FunctionalTester
