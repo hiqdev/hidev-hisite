@@ -1,9 +1,11 @@
 hiqdev/hidev-hisite commits history
 -----------------------------------
 
-## Under development
+## 0.4.0 2016-05-14
 
 - Added functional tests
+    - 0ddb605 2016-05-14 added more php-cs-fixer skip pathes (sol@hiqdev.com)
+    - 82c41af 2016-05-14 csfixed (sol@hiqdev.com)
     - 4e91329 2016-05-13 added functional tests (sol@hiqdev.com)
     - e522f30 2016-05-13 fixed dependencies (sol@hiqdev.com)
     - b7a2e04 2016-05-13 fixing dependencies constraints (sol@hiqdev.com)

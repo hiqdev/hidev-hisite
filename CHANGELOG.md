@@ -1,7 +1,7 @@
 hiqdev/hidev-hisite changelog
 -----------------------------
 
-## Under development
+## 0.4.0 2016-05-14
 
 - Added functional tests
 - Added better nginx goal integration

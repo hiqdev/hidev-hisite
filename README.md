@@ -14,21 +14,22 @@ HiDev HiSite
 
 This plugin provides HiDev configuration for HiSite.
 
-[HiSite](https://github.com/hiqdev/hisite) is another way of building Yii2 web applications.
+[HiSite](https://github.com/hiqdev/hisite) is another way of building Yii2 based web applications.
 
 Provides:
 
-- creating directories and files:
+- creating directory structure and files:
     - `runtime/`
     - `web/assets/`
     - `web/index.php`
-    - `src/_bootstrap.php`
-    - `src/config/params.php`  (if not exists)
-    - `src/config/common.php`  (if not exists)
-    - `src/config/console.php` (if not exists)
-    - `src/config/web.php`     (if not exists)
+    - `src/config/bootstrap.php`
+    - `src/config/defines.php`
+    - `src/config/hidev.php`
+    - `src/config/hisite.php`
+    - `src/config/params.php`
+    - `src/config/web.php`
 - setting permissions for directories and files
-- nginx config generation
+- nginx config generation with help of `hidev-nginx` plugin
 
 ## Installation
 
