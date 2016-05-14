@@ -46,9 +46,13 @@ return Symfony\CS\Config\Config::create()
     ->finder(
         Symfony\CS\Finder\DefaultFinder::create()
             ->in(__DIR__)
+            ->notPath('tests/functional/minimal')
+            ->notPath('src/views/hisite')
             ->notPath('vendor')
             ->notPath('runtime')
             ->notPath('web/assets')
             ->notPath('tests/unit/UnitTester.php')
+            ->notPath('tests/functional/minimal')
+            ->notPath('src/views/hisite')
     )
 ;

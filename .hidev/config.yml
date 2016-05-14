@@ -26,3 +26,8 @@ package:
         - setting permissions for directories and files
         - nginx config generation
 
+php-cs-fixer:
+    finder:
+        notPath:
+            - tests/functional/minimal
+            - src/views/hisite
