@@ -1,6 +1,11 @@
 hiqdev/hidev-hisite commits history
 -----------------------------------
 
+## 0.4.1 2016-05-24
+
+- Changed: redone to `composer-config-plugin`
+    - 296acb3 2016-05-24 redone to composer-config-plugin (sol@hiqdev.com)
+
 ## 0.4.0 2016-05-14
 
 - Added functional tests
