@@ -42,7 +42,7 @@
         }
     ],
     "require": {
-        "hiqdev/composer-extension-plugin": "<2.0",
+        "hiqdev/composer-config-plugin": "<2.0 || dev-master",
         "hiqdev/hidev-nginx": "<2.0"
     },
     "require-dev": {
@@ -61,9 +61,9 @@
         }
     },
     "extra": {
-        "extension-plugin": {
-            "hidev-config": "src/config/hidev.php",
-            "hisite-config": "src/config/hisite.php"
+        "config-plugin": {
+            "hidev": "src/config/hidev.php",
+            "hisite": "src/config/hisite.php"
         }
     },
     "repositories": [
