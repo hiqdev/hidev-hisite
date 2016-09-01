@@ -3,6 +3,8 @@ hiqdev/hidev-hisite
 
 ## [0.4.2] - 2016-09-01
 
+- Fixed templates for config files
+
 ## [0.4.1] - 2016-05-24
 
 - Changed: redone to `composer-config-plugin`
