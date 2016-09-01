@@ -1,11 +1,13 @@
-hiqdev/hidev-hisite changelog
------------------------------
+hiqdev/hidev-hisite
+-------------------
 
-## 0.4.1 2016-05-24
+## [Under development]
+
+## [0.4.1] - 2016-05-24
 
 - Changed: redone to `composer-config-plugin`
 
-## 0.4.0 2016-05-14
+## [0.4.0] - 2016-05-14
 
 - Added functional tests
 - Added better nginx goal integration
@@ -14,9 +16,8 @@ hiqdev/hidev-hisite changelog
 - Changed with new `hiqdev/composer-extension-plugin`
 - Added initial tests and fixed build
 
-## 0.0.1 2016-03-22
+## [0.0.1] - 2016-03-22
 
 - Added basics
 
-## Development started 2016-02-22
-
+## [Development started] - 2016-02-22
