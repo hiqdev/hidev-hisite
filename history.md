@@ -1,8 +1,9 @@
 hiqdev/hidev-hisite
 -------------------
 
-## [Under development]
+## [0.4.2] - 2016-09-01
 
+    - [49f0184] 2016-09-01 redone CHANGELOG generation to `chkipper` [sol@hiqdev.com]
     - [255fcea] 2016-09-01 fixed templates for config files [sol@hiqdev.com]
     - [9081708] 2016-08-13 fixed templates for config files [sol@hiqdev.com]
 
@@ -127,3 +128,4 @@ hiqdev/hidev-hisite
 [3f42ad5]: https://github.com/hiqdev/hidev-hisite/commit/3f42ad5
 [255fcea]: https://github.com/hiqdev/hidev-hisite/commit/255fcea
 [9081708]: https://github.com/hiqdev/hidev-hisite/commit/9081708
+[49f0184]: https://github.com/hiqdev/hidev-hisite/commit/49f0184
