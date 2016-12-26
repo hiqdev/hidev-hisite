@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * HiDev config for HiSite
  *
  * @link      https://github.com/hiqdev/hidev-hisite

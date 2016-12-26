@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * HiDev config for HiSite
  *
  * @link      https://github.com/hiqdev/hidev-hisite
@@ -14,6 +13,6 @@ error_reporting(E_ALL);
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
 
-foreach (require __DIR__ . '/../vendor/hiqdev/config/aliases.php' as $alias => $path) {
+foreach (require __DIR__ . '/../vendor/hiqdev/composer-config-plugin-output/aliases.php' as $alias => $path) {
     Yii::setAlias($alias, $path);
 }
