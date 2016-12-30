@@ -28,6 +28,7 @@ class DefinesController extends \hidev\controllers\FileController
     {
         $text = $this->getItem('text');
         foreach ($this->getHisite()->getDefines() as $key => $value) {
+            $value = var_export($value, true);
             $text = preg_replace("/^defined\('$key'\) or define\('$key',.*$/m", "defined('$key') or define('$key', $value);", $text);
         }
         $this->getFile()->save($text);

@@ -51,10 +51,9 @@ class HiSiteController extends \hidev\controllers\DirectoryController
 
     public function setDefines(array $hash)
     {
-        $env = $this->getEnv();
         $defaults = [
-            'YII_ENV'   => "'$env'",
-            'YII_DEBUG' => $this->getDebug() ? 'true' : 'false',
+            'YII_ENV'   => $this->getEnv(),
+            'YII_DEBUG' => $this->getDebug(),
         ];
         $this->_defines = array_merge($this->_defines, $defaults, $hash);
     }
