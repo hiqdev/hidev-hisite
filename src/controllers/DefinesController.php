@@ -5,7 +5,7 @@
  * @link      https://github.com/hiqdev/hidev-hisite
  * @package   hidev-hisite
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
  */
 
 namespace hidev\hisite\controllers;

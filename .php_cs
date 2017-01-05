@@ -6,13 +6,13 @@ HiDev config for HiSite
 @link      https://github.com/hiqdev/hidev-hisite
 @package   hidev-hisite
 @license   BSD-3-Clause
-@copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+@copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
 EOF;
 
 return PhpCsFixer\Config::create()
     ->setUsingCache(true)
     ->setRiskyAllowed(true)
-    ->setRules([
+    ->setRules(array(
         '@Symfony' => true,
         'header_comment'                             =>  [
             'header'        => $header,
@@ -43,7 +43,7 @@ return PhpCsFixer\Config::create()
         'strict_comparison'                          =>  true,
         'strict_param'                               =>  true,
         'no_multiline_whitespace_before_semicolons'  =>  true,
-    ])
+    ))
     ->setFinder(
         PhpCsFixer\Finder::create()
             ->in(__DIR__)
