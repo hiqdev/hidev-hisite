@@ -3,8 +3,8 @@
 return [
     'components' => [
         'themeManager' => [
-            'themedPaths' => [
-                '@{{ config.package.namespace | replace({'\\': '/'}) }}/views',
+            'pathMap' => [
+                '$themedViewPaths' => ['@{{ config.package.namespace | replace({'\\': '/'}) }}/views'],
             ],
         ],
     ],

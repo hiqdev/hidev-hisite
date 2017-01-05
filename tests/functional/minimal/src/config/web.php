@@ -1,5 +1,5 @@
 <?php
 
-$config = require HISITE_VENDOR_DIR . '/hiqdev/hisite-config.php';
+use hiqdev\composer\config\Builer;
 
-return $config;
+return require Builder::path('hisite');
