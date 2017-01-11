@@ -9,6 +9,7 @@
  */
 
 error_reporting(E_ALL);
+date_default_timezone_set('UTC');
 
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
