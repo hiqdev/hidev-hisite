@@ -1,8 +1,10 @@
 <?php
 
-require __DIR__ . '/../src/config/defines.php';
+use hiqdev\composer\config\Builder;
+use yii\web\Application;
+
 require __DIR__ . '/../src/config/bootstrap.php';
 
-$config = require __DIR__ . '/../src/config/web.php';
+$config = require Builder::path('hisite');
 
-(new yii\web\Application($config))->run();
+(new Application($config))->run();
