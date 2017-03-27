@@ -1,5 +1,4 @@
-HiDev HiSite
-============
+# HiDev HiSite
 
 **HiDev config for HiSite**
 

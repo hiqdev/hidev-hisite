@@ -1,7 +1,11 @@
 hiqdev/hidev-hisite
 -------------------
 
-## [0.4.3] - 2017-01-05
+## [0.5.0] - 2017-03-27
+
+- Added `robots.txt` generation ([@hiqsol])
+
+## [0.4.3] - 2017-01-07
 
 - Changed templates for newer yii2-thememanager and composer-config-plugin ([@hiqsol])
 
@@ -36,9 +40,10 @@ hiqdev/hidev-hisite
 [tafid@hiqdev.com]: https://github.com/tafid
 [@BladeRoot]: https://github.com/BladeRoot
 [bladeroot@hiqdev.com]: https://github.com/BladeRoot
-[Under development]: https://github.com/hiqdev/hidev-hisite/compare/0.4.2...HEAD
+[Under development]: https://github.com/hiqdev/hidev-hisite/compare/0.4.3...HEAD
 [0.4.2]: https://github.com/hiqdev/hidev-hisite/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/hiqdev/hidev-hisite/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/hiqdev/hidev-hisite/compare/0.0.1...0.4.0
 [0.0.1]: https://github.com/hiqdev/hidev-hisite/releases/tag/0.0.1
 [0.4.3]: https://github.com/hiqdev/hidev-hisite/compare/0.4.2...0.4.3
+[0.5.0]: https://github.com/hiqdev/hidev-hisite/compare/0.4.3...0.5.0

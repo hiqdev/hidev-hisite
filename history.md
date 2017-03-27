@@ -1,7 +1,14 @@
 hiqdev/hidev-hisite
 -------------------
 
-## [0.4.3] - 2017-01-05
+## [0.5.0] - 2017-03-27
+
+- Added `robots.txt` generation
+    - [48982a3] 2017-03-27 added `robots.txt` generation [@hiqsol]
+    - [654e674] 2017-01-11 fixed tests [@hiqsol]
+    - [204bbef] 2017-01-11 fixed typo [@hiqsol]
+
+## [0.4.3] - 2017-01-07
 
 - Changed templates for newer yii2-thememanager and composer-config-plugin
     - [9ac2538] 2017-01-05 csfixed [@hiqsol]
@@ -156,9 +163,13 @@ hiqdev/hidev-hisite
 [d02428b]: https://github.com/hiqdev/hidev-hisite/commit/d02428b
 [0b4ee48]: https://github.com/hiqdev/hidev-hisite/commit/0b4ee48
 [8608d4b]: https://github.com/hiqdev/hidev-hisite/commit/8608d4b
-[Under development]: https://github.com/hiqdev/hidev-hisite/compare/0.4.2...HEAD
+[Under development]: https://github.com/hiqdev/hidev-hisite/compare/0.4.3...HEAD
 [0.4.2]: https://github.com/hiqdev/hidev-hisite/compare/0.4.1...0.4.2
 [0.4.1]: https://github.com/hiqdev/hidev-hisite/compare/0.4.0...0.4.1
 [0.4.0]: https://github.com/hiqdev/hidev-hisite/compare/0.0.1...0.4.0
 [0.0.1]: https://github.com/hiqdev/hidev-hisite/releases/tag/0.0.1
 [0.4.3]: https://github.com/hiqdev/hidev-hisite/compare/0.4.2...0.4.3
+[48982a3]: https://github.com/hiqdev/hidev-hisite/commit/48982a3
+[654e674]: https://github.com/hiqdev/hidev-hisite/commit/654e674
+[204bbef]: https://github.com/hiqdev/hidev-hisite/commit/204bbef
+[0.5.0]: https://github.com/hiqdev/hidev-hisite/compare/0.4.3...0.5.0
