@@ -14,6 +14,9 @@ hisite:
         index.php:
             once:     true
             template: hisite/web/index.twig
+        robots.txt:
+            once:     true
+            template: hisite/web/robots.twig
     runtime:
         chmod:  '0777'
     src:
