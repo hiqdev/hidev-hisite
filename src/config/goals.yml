@@ -36,7 +36,3 @@ hisite:
             params.php:
                 once:     true
                 template: hisite/config/params.twig
-            web.php:
-                once:     true
-                template: hisite/config/web.twig
-
