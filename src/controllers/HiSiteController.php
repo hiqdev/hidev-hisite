@@ -29,7 +29,7 @@ class HiSiteController extends \hidev\controllers\DirectoryController
     public function getEnv()
     {
         if ($this->_env === null) {
-            $this->_env = 'dev';
+            $this->_env = 'prod';
         }
 
         return $this->_env;
